@@ -9,7 +9,7 @@ def pytest_addoption(parser):    # add flag url
 
 @pytest.fixture
 def base_url(request):
-    return request.congig.getoption('--url')
+    return request.config.getoption('--url')
 
 
 @pytest.fixture
