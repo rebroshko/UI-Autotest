@@ -13,7 +13,7 @@ class SearchPage(ProductPage):
     def write_data_and_switch(self):
         input_element = self.found_element(*BasePageLocators.SEARCH_BAR_FIND)
         input_element.send_keys(BaseLocator.SEARCH_DATA)
-        input_element.send_keys(Keys.RETURN)
+        input_element.send_keys(Keys.RETURN) # Ильдар молодец
 
     def found_product_and_switch(self):
         assert self.check_visible_element(*BasePageLocators.PRODUCT_NAME), 'Product not found'
